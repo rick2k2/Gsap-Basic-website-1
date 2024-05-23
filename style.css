@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* light mode variable */
+:root {
+  --background-color: #fff;
+  --textcolor: #1b1b1b;
+  --sidebar-background-color: rgb(240, 47, 86);
+}
+/* dark mode variable */
+:root.dark-mode {
+  --background-color: #1b1b1b;
+  --textcolor: #fff;
+  --sidebar-background-color: #333;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--textcolor);
+}
+.side_bar {
+  background: var(--sidebar-background-color);
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+.navbar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-left: 70px;
+  color: var(--textcolor);
+}
+.brand {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  left: 50px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 90px;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: var(--textcolor);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+#mode {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.left_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
+}
+.img_div {
+  width: 380px;
+  height: 250px;
+  background-image: url("https://plus.unsplash.com/premium_photo-1703026570751-911cf154831c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.2);
+  box-shadow: 2px 10px 30px #fffafa;
+  border-radius: 50px 0px;
+}
+.right_div {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--textcolor);
+}
+.right_div > h2 {
+  font-family: "Kumar One Outline", cursive;
+  font-size: 4rem;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+.right_div > p {
+  transform: rotate(-90deg);
+  font-family: sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  position: relative;
+  left: 40px;
+  text-align: center;
+}
+.para2 {
+  margin-left: 30px;
+  margin-top: -30px;
+}
